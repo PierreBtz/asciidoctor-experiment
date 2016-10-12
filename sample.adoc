@@ -1,0 +1,145 @@
+:source-highlighter: pygments
+:data-uri:
+:icons: font
+
+= This is Sample Page
+Pierre Btz <PierreBtz@users.noreply.github.com>
+v0.0.1
+This is a description. It would be nice to be able to inject the version number.
+
+== Text
+=== Simple text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum felis vitae interdum iaculis. Nam ut sollicitudin lectus. Quisque nec dui viverra, pretium leo vel, tempus risus. Proin convallis augue at tempor consectetur. Cras sed suscipit elit, efficitur auctor sapien. Nam elit nibh, varius iaculis vulputate eu, commodo eget diam. Ut auctor ipsum vel velit finibus, non convallis ipsum vehicula. Vivamus vel nisi nec augue blandit dapibus. Maecenas ut metus pellentesque, interdum velit id, ullamcorper nulla. Pellentesque blandit id orci eget sollicitudin. Integer volutpat nibh ac nulla tincidunt tincidunt. Vivamus efficitur odio blandit sem placerat fringilla. Vivamus sit amet justo non diam pellentesque dignissim non vitae felis.
+
+Curabitur ullamcorper est enim, vitae lobortis enim iaculis eu. Curabitur posuere orci diam, eu ornare dui pretium ut. Nunc tellus diam, laoreet eu venenatis blandit, rutrum vitae mauris. Aenean imperdiet sem ac nisl sagittis tincidunt. Fusce rhoncus blandit ultrices. Proin non purus consectetur, euismod nulla vitae, placerat risus. Nam sed interdum tortor.
+
+=== Hard breaks
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. +
+Mauris bibendum felis vitae interdum iaculis. +
+Nam ut sollicitudin lectus. +
+Quisque nec dui viverra, pretium leo vel, tempus risus.
+
+=== Some formatting, in an ordered list
+* _italic_
+* *bold*
+* *_bold and italic_*
+* for an command, we can use a `monospace phrase`
+* what if I want to \*escape*? It seems to \_work_!!
+
+=== Containers
+==== Note
+NOTE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+==== Tip
+TIP: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+=== Important
+IMPORTANT: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+=== Caution
+CAUTION: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+=== Warning
+WARNING: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+== Titles
+== level1
+=== level2
+==== level3
+===== level4
+====== level5
+
+== Lists
+=== Nested and unordered
+* level1
+** level2
+*** level3
+*** level3
+** level2
+* level
+
+=== Nested and ordered
+. number one
+.. 2nd level number one
+... 3rd level number one
+... 3rd level number two
+.. 2nd level number two
+. number two
+
+=== Labeled
+Option1:: This is what happens if I choose one.
+Option2:: This is what happens if I choose two.
+
+== Navigation
+=== Links
+A link is autodected in the text http://www.asciidoctor.org. +
+But I can also attach text http://www.asciidoctor.org[to my url].
+I can also make internal links: go to <<Lists>>
+Cross documentation link is possible. Let's go to my <<questions.adoc#, questions document>>
+
+== Code
+=== In document (with highlighting):
+
+* Hello world in java:
+
+
+[source,java]
+----
+// this is a comment
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+----
+
+* bash:
+
+[source,bash]
+----
+# this is a comment
+git clone https://github.com/zenorocha/atom-javascript-snippets.git # <1>
+cd atom-javascript-snippets
+apm install # <2>
+apm link
+----
+<1> clone the repository
+<2> install the plugin
+
+=== External:
+
+[source,java]
+----
+include::Sample.java[]
+----
+
+=== Part of an external file:
+
+[source,java]
+----
+include::Sample.java[tags=construction]
+----
+
+=== Tables
+
+[cols="3*"]
+|===
+|*Version*
+|*Feature 1*
+|*Feature 2*
+
+|1
+|yes
+|no
+
+|2
+|yes
+|yes
+|===
+
+== Multimedia
+=== Images
+.My GitHub Profile Picture, it is also a link to my profile.
+image::profile.png[Sunset, 200, 200, link="https://github.com/PierreBtz"]
+=== Videos
+video::o3thkx3EuiA"[youtube]

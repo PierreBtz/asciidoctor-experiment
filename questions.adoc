@@ -1,0 +1,11 @@
+= Opened Questions
+
+Here are the questions I did not answer (yet...).
+
+* What about injecting the document version number?
+* CI/CD integration
+* HTML output can be captured into a variable, maybe possible to integrate in some other devs?
+* Need to test docbook backend (to convert to pdf later?)
+* Could not find asciidoctor-pdf and asciidoctor-epub3 as indicated in the doc. Did I miss something?
+* I currently inlined the images in the document, it's probably proper to leave them outside.
+* What about styling? According to the documentation it seems easy, but I need to test.
